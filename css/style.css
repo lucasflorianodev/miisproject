@@ -191,7 +191,7 @@ body {
     font-size: 18px;
     width: 450px;
     top: 150px;
-    right: 75px;
+    right: 35px;
     color: #FFFF; 
 }
 
@@ -235,7 +235,7 @@ body {
     line-height: 77px;
     width: 900px;
     height: 200px;
-    top: 4100px;
+    top: 4200px;
     left: 200px;
     color: #FFF2E7;
 }
@@ -275,7 +275,7 @@ body {
     font-weight: 400;
     font-size: 25px;
     width: 850px;
-    top: 4200px;
+    top: 4300px;
     left: 200px;
     color: #FFFF; 
 }
@@ -316,6 +316,23 @@ body {
     top: 4100px;
 }
 
+
+.conteudo-principal-escrito-botao {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fefeff;
+    color: #FFF2E7;
+    background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #ffffff 0%, rgba(255, 255, 255, ) 71.88%);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 12px;
+    width: 208px;
+    height: 56px;
+    top: 651px;
+    left: 200px;
+    border-radius: 44px;
+}
+
 .conteudo-adjacente-escrito-botao {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fbfafc;
@@ -347,24 +364,9 @@ body {
     height: 56px;
     left: 200px;
     border-radius: 44px;
-    top: 4300px;
+    top: 4400px;
 }
 
-.conteudo-principal-escrito-botao {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #fefeff;
-    color: #FFF2E7;
-    background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #ffffff 0%, rgba(255, 255, 255, ) 71.88%);
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 12px;
-    width: 208px;
-    height: 56px;
-    top: 651px;
-    left: 200px;
-    border-radius: 44px;
-}
 
 .conteudo-principal-escrito-botao:hover {
     background-color: rgba(0, 0, 0, 0.25);
