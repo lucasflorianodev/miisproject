@@ -13,12 +13,18 @@ html {
 
 body {
     font-size: 100%;
-    background: radial-gradient(99.27% 99.27% at 50.84% 100%, #000000 8.33%, #3F187E 75.52%, #513185 100%);
+    background: radial-gradient(99.27% 99.27% at 50.84% 100%, #000000 15.63%, #160630 39.06%, #513185 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 4900px;
-    width: 1900px;
+    height: 4850px;
+    width: 1910px;
     left: 0px;
-    right: 0px;;
+    right: 0px;
+    overflow-x: hidden;
+}
+
+main{
+    padding: 20px;
+    margin: auto;
 }
 
 .cabecalho {
@@ -37,9 +43,13 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-    top: 5px;
-    left: 30px;
+    top: 15px;
+    left: 45px;
     opacity: 90%;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .cabecalho-menu {
@@ -54,10 +64,12 @@ body {
     border-bottom: 3px solid transparent;
     transition: all 0.25 ease-in-out;
     color: #FFF2E7;
-    padding: 5px 0;
     gap: 20px;
     font-size: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: none;
 }
 
 .cabecalho-menu-item {
@@ -78,8 +90,6 @@ body {
     align-content: center;
 }
 
- /* Conteúdos Principais */ 
-
 .conteudo-principal {
     display: flex;
     flex-direction: row;
@@ -87,8 +97,8 @@ body {
     justify-content: space-around;
     font-style: normal;
     font-weight: 400;
-    width: 1200px;
-    height: 1050px;
+    width: 800px;
+    height: 1000px;
     left: 400px;
     top: 550px;
     font-size: 20px;
@@ -136,8 +146,6 @@ body {
     color: #FFFF;
 }
 
- /* Conteúdos ajdacentes */ 
-
 .conteudo-adjacente {
     display: flex;
     flex-direction: row;
@@ -172,8 +180,6 @@ body {
 
 }
 
- /* Títulos */ 
-
 .conteudo-adjacente-escrito-titulo {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -188,6 +194,18 @@ body {
     color: #FFF2E7;
 }
 
+.conteudo-adjacente-escrito-subtitulo {
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    width: 450px;
+    top: 150px;
+    right: 75px;
+    color: #FFFF; 
+}
 
 .conteudo-adjacente-escrito-titulo-1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -229,29 +247,15 @@ body {
     line-height: 77px;
     width: 900px;
     height: 200px;
-    top: 4200px;
+    top: 4300px;
     left: 200px;
     color: #FFF2E7;
-}
-
- /* Subtítulos */ 
-
- .conteudo-adjacente-escrito-subtitulo {
-    font-family: 'Josefin Sans', sans-serif;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-size: 18px;
-    width: 450px;
-    top: 150px;
-    right: 35px;
-    color: #FFFF; 
 }
 
 .conteudo-adjacente-escrito-subtitulo-1 {
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
+    text-align: justify;
     margin: 0;
     padding: 0;
     font-weight: 400;
@@ -265,6 +269,7 @@ body {
 .conteudo-adjacente-escrito-subtitulo-2 {
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
+    text-align: justify;
     margin: 0;
     padding: 0;
     font-weight: 400;
@@ -284,12 +289,10 @@ body {
     font-weight: 400;
     font-size: 25px;
     width: 850px;
-    top: 4300px;
+    top: 4400px;
     left: 200px;
     color: #FFFF; 
 }
-
- /* Imagens da página */ 
 
 .conteudo-adjacente-imagem {
     display: flex;
@@ -324,17 +327,17 @@ body {
     margin: 0 auto;
     padding: 0;
     right: 150px;
-    top: 4100px;
+    top: 4200px;
 }
-
- /* Texto dos botões */ 
 
 .conteudo-principal-escrito-botao {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fefeff;
     color: #FFF2E7;
     background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #ffffff 0%, rgba(255, 255, 255, ) 71.88%);
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     font-weight: 700;
     font-size: 17px;
     line-height: 12px;
@@ -342,15 +345,17 @@ body {
     height: 56px;
     top: 651px;
     left: 200px;
-    border-radius: 44px;
+    border-radius: 20px;
 }
 
 .conteudo-adjacente-escrito-botao {
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #fbfafc;
-    color: #FFF2E7;
-    background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #fcfcfd 0%, rgba(255, 255, 255, ) 71.88%);
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffffff;
+    color: #ffffff;
+    background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #ffffff 0%, rgb(255, 255, 255) 71.88%);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     font-weight: 700;
     position: absolute;
     font-size: 17px;
@@ -359,42 +364,52 @@ body {
     height: 56px;
     top: 200px;
     left: 70px;
-    border-radius: 44px;
+    border-radius: 20px;
 }
 
 .conteudo-adjacente-escrito-botao-3 {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #ffffff;
     color: #FFF2E7;
-    background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #fafafa 0%, rgba(255, 255, 255,) 71.88%);
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-    font-weight: 700;
     position: absolute;
+    background: radial-gradient(164.22% 6353.96% at 134.83% 15.18%, #ffffff 0%, rgb(255, 255, 255) 71.88%);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
     font-size: 17px;
     line-height: 12px;
     width: 208px;
     height: 56px;
     left: 200px;
-    border-radius: 44px;
-    top: 4400px;
+    border-radius: 20px;
+    top: 4500px;
 }
 
- /*Houver dos Botões*/ 
-
 .conteudo-principal-escrito-botao:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgb(190, 190, 190);
 }
 
 .conteudo-adjacente-escrito-botao:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgb(190, 190, 190);
 }
 
 .conteudo-adjacente-escrito-botao-3:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgb(190, 190, 190);
 }
 
-@media (max-width: 600px) {
-    .conteudo-adjacente-imagem, .conteudo-adjacente-escrito-titulo, .conteudo-adjacente-escrito-subtitulo {
-        width: 100%;
-    }
+/*barra de rolagem*/
+
+::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #332d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(8, 8, 8, 0.616);
+    border-radius: 15px;
 }
